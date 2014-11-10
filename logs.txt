@@ -1,0 +1,20 @@
+1.	What type of log files are they?
+A set of php access, error, and security logs
+
+2.	What are the dates which are represented by the logs?
+Between Nov 10 and Dec 10
+
+3.	How many unique users appear?
+I see a lot of ip addresses and some repeats, but it far too many to count I defiantly think its over 100
+
+4.	What was the largest data export? and does it look out of the ordinary?
+31028 is the largest I could find and it appears to be and ordinary serenity file
+
+5.	What is the most common error found in the error logs?
+File does not exists 
+
+6.	Do you see anything which is out of the ordinary?
+There were a quite a few failed login attempt from China in the secure files,
+
+7.	Write a short synopsis of what you found.
+I was astounded at the huge list of ip addresses and information a server collects, before now I had no Idea a server gathered so much about you when you download!
