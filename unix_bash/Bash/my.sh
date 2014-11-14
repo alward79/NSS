@@ -199,14 +199,39 @@
 #greet Angie Morning
 #greet Everybody Evening
 
-function numberthings {
-	i=1
-	for f in $@; do
-		echo $i: $f
-		((i+=1))
-	done
-}
+#function numberthings {
+#	i=1
+#	for f in $@; do
+#		echo $i: $f
+#		((i+=1))
+#	done
+#}
 
-numberthings $(ls)
+#numberthings $(ls)
 
-numberthings pine birch maple spruce
+#numberthings pine birch maple spruce
+
+#WORKING WITH ARGUMENTS
+#echo $1
+#echo $2
+
+#for i in $@
+#do
+#	echo $i
+#done
+#
+#echo "There were $# arguments."
+
+#WORKING WITH FLAGS
+while getopts :u:p:ab option; do
+	case $option in
+		u) user=$OPTARG;;
+		p) pass=$OPTARG;;
+		a) echo "Got the A flag";;
+		b) echo "Got the B flag";;
+		?) echo "I don't know what $OPTARG is!";;
+	esac
+done
+
+echo "User: $user / Pass: $pass"
+
