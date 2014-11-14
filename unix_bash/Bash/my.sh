@@ -179,9 +179,34 @@
 #done
 
 #CASE STATEMENTS
-a="bird"
-case $a in
-	cat) echo "Feline";;
-	dog|puppy) echo "Canine";;
-	*) echo "No match!";;
-esac
+#a="bird"
+#case $a in
+#	cat) echo "Feline";;
+#	dog|puppy) echo "Canine";;
+#	*) echo "No match!";;
+#esac
+
+#USING FUNCTIONS
+#function greet {
+#	echo "Hi there!"
+#	echo "Hi $1"
+#	echo "Hi $1! What a nice $2"
+#}
+#
+#echo "And now, a greeting!"
+#greet
+#greet Angie
+#greet Angie Morning
+#greet Everybody Evening
+
+function numberthings {
+	i=1
+	for f in $@; do
+		echo $i: $f
+		((i+=1))
+	done
+}
+
+numberthings $(ls)
+
+numberthings pine birch maple spruce
