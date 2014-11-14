@@ -1,4 +1,4 @@
-#!/bin/bash# 
+#!/bin/bash 
 #This is a basic bash script
 #greeting="hello"
 
@@ -178,3 +178,10 @@
 #	echo "$i: ${arr[$i]}"
 #done
 
+#CASE STATEMENTS
+a="bird"
+case $a in
+	cat) echo "Feline";;
+	dog|puppy) echo "Canine";;
+	*) echo "No match!";;
+esac
